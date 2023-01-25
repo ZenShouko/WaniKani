@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en　ja-jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>WaniKani / Dashboard</title>
+  <link rel="stylesheet" href="Styles/index-styles.css">
+  <link rel="stylesheet" href="Styles/header-styles.css">
+  <link rel="stylesheet" href="Styles/default-styles.css">
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!--Japanese Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap" rel="stylesheet">
+</head>
+<!--De totale breedte= 1200px op volledig scherm-->
+<body>
+<header>
+  <div class="header-container">
+    <div>
+      <img class="wk-logo" src="Resources/logo.png" alt="WaniKani-Logo">
+    </div>
+    <div>
+      <button class="gray-border">Levels</button>
+      <button class="blue-border">Radicals</button>
+      <button class="pink-border">Kanji</button>
+      <button class="purple-border">Vocabulary</button>
+      <button class="gray-border">Help</button>
+      <button class="search-button">
+        <img src="Resources/search-icon.png" alt="Search">
+      </button>
+      <img class="pfp" src="Resources/pfp.jpeg" alt="Profile Picture">
+    </div>
+  </div>
+</header>
+
+<!--Welcome back message-->
+<section class="welcome-back-section def-div">
+  <h1>Welcome back <span class="username">Shouko</span>! Are you ready to smash your lessons& reviews? （ΦωΦ）</h1>
+</section>
+
+<!--Reviews& Lessons section-->
+<section class="reviews-lessons-container">
+  <div class="lessons-button">
+    <img src="Resources/lessons-modif.png" alt="lessons">
+    <div class="button-info">
+      <p>Lessons</p>
+      <p>100</p>
+    </div>
+  </div>
+  <div class="reviews-button">
+    <img src="Resources/reviews.png" alt="lessons">
+    <div class="button-info button-info-reviews">
+      <p>Reviews</p>
+      <p>0</p>
+    </div>
+  </div>
+</section>
+
+<!--Extra study-->
+<section class="extra-study-container def-div">
+  <h3>Extra study</h3>
+  <div class="extra-study-content">
+    <div class="extra-study-button-container">
+      <button>
+        <img src="Resources/recent-lessons.png" alt="bruh">
+        20 Recent Lessons
+      </button>
+      <button>
+        <img src="Resources/mistake.png" alt="bruh">
+        5 Recent Mistakes
+      </button>
+      <button>
+        <img src="Resources/burned.png" alt="bruh">
+        400 Burned Items
+      </button>
+      <button>
+        <img src="Resources/custom-thinking.png" alt="bruh">
+        Custom Review ...
+      </button>
+    </div>
+    <div class="extra-study-image-container">
+      <img src="Resources/extra-study.png" alt="extra study yay">
+    </div>
+  </div>
+</section>
+
+<!--Level progress section-->
+<section class="level-progress-container def-div">
+  <div>
+    <h3>Level 9 progress</h3>
+    <div class="progressbar-border">
+      <div class="progressbar-fill">
+        17 of 34 kanji passed
+      </div>
+    </div>
+    <div class="radicals-container">
+      <h3>Radicals</h3>
+      <div class="radicals-grid">
+        <div class="radical-cell">
+          介
+          <div class="moji-progress-container">
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+          </div>
+          <div class="moji-tooltip">
+            <p>Jammed In</p>
+          </div>
+        </div>
+        <div class="radical-cell">
+          史
+          <div class="moji-progress-container">
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+          </div>
+          <div class="moji-tooltip">
+            <p>History</p>
+          </div>
+        </div>
+        <div class="radical-cell">
+          癶
+          <div class="moji-progress-container">
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+          </div>
+          <div class="moji-tooltip">
+            <p>Tent</p>
+          </div>
+        </div>
+        <div class="radical-cell">
+          咅
+          <div class="moji-progress-container">
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+          </div>
+          <div class="moji-tooltip">
+            <p>Clown</p>
+          </div>
+        </div>
+        <div class="radical-cell">
+          阝
+          <div class="moji-progress-container">
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+          </div>
+          <div class="moji-tooltip">
+            <p>Building</p>
+          </div>
+        </div>
+        <div class="radical-cell">
+          辛
+          <div class="moji-progress-container">
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+          </div>
+          <div class="moji-tooltip">
+            <p>Spicy</p>
+          </div>
+        </div>
+        <div class="radical-cell">
+          重
+          <div class="moji-progress-container">
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+          </div>
+          <div class="moji-tooltip">
+            <p>Heavy</p>
+          </div>
+        </div>
+        <div class="radical-cell">
+          反
+          <div class="moji-progress-container">
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+          </div>
+          <div class="moji-tooltip">
+            <p>Anti</p>
+          </div>
+        </div>
+        <div class="radical-cell">
+          聿
+          <div class="moji-progress-container">
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+          </div>
+          <div class="moji-tooltip">
+            <p>Brush</p>
+          </div>
+        </div>
+        <div class="radical-cell">
+          正
+          <div class="moji-progress-container">
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+          </div>
+          <div class="moji-tooltip">
+            <p>Correct</p>
+          </div>
+        </div>
+        <div class="radical-cell">
+          台
+          <div class="moji-progress-container">
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+          </div>
+          <div class="moji-tooltip">
+            <p>Machine</p>
+          </div>
+        </div>
+        <div class="radical-cell">
+          疋
+          <div class="moji-progress-container">
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+          </div>
+          <div class="moji-tooltip">
+            <p>Coat Rack</p>
+          </div>
+        </div>
+        <div class="radical-cell">
+          覀
+          <div class="moji-progress-container">
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+          </div>
+          <div class="moji-tooltip">
+            <p>Helicopter</p>
+          </div>
+        </div>
+        <div class="radical-cell">
+          シ
+          <div class="moji-progress-container">
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+          </div>
+          <div class="moji-tooltip">
+            <p>Shitsu</p>
+          </div>
+        </div>
+        <div class="radical-cell">
+          ツ
+          <div class="moji-progress-container">
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+          </div>
+          <div class="moji-tooltip">
+            <p>Shitsu</p>
+          </div>
+        </div>
+        <div class="radical-cell">
+          シ
+          <div class="moji-progress-container">
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+          </div>
+          <div class="moji-tooltip">
+            <p>Shitsu</p>
+          </div>
+        </div>
+        <div class="radical-cell">
+          ツ
+          <div class="moji-progress-container">
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+          </div>
+          <div class="moji-tooltip">
+            <p>Shitsu</p>
+          </div>
+        </div>
+        <div class="radical-cell">
+          シ
+          <div class="moji-progress-container">
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+          </div>
+          <div class="moji-tooltip">
+            <p>Shitsu</p>
+          </div>
+        </div>
+        <div class="radical-cell">
+          ツ
+          <div class="moji-progress-container">
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+          </div>
+          <div class="moji-tooltip">
+            <p>Shitsu</p>
+          </div>
+        </div>
+        <div class="radical-cell">
+          シ
+          <div class="moji-progress-container">
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+          </div>
+          <div class="moji-tooltip">
+            <p>Shitsu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>

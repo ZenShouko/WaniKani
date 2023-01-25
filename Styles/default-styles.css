@@ -1,0 +1,29 @@
+* {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 500;
+    text-shadow: 1px 1px #ececec;
+}
+
+p, h1, h2, h3, h4, h5{
+    margin: 0;
+}
+
+.JA-FONT{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+}
+
+body{
+    padding-top: 75px;
+    background: #f4efff;
+}
+
+.def-div{
+    border: 2px solid black;
+    border-radius: 20px;
+    background: #FEFEFE;
+    margin-bottom: 1em;
+    padding: 1em 1.25em;
+    max-width: 1000px;
+    margin-inline: auto;
+}

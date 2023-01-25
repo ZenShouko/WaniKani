@@ -1,0 +1,85 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f6f6f6;
+    z-index: 10;
+    height: fit-content;
+    padding: 6px 0;
+    box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.35);
+    display: flex;
+    justify-content: center;
+}
+
+.header-container{
+    display: flex;
+    width: 1250px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container div{
+    display: flex;
+    align-items: center;
+}
+
+.header-container button{
+    border: 2px solid transparent;
+    background: transparent;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 0 8px;
+    border-radius: 8px;
+    transition: 250ms;
+}
+.gray-border,
+.blue-border,
+.pink-border,
+.purple-border{
+    padding: 8px 12px;
+}
+.gray-border:hover{
+    border: 2px solid lightgray;
+}
+.blue-border:hover{
+    border: 2px solid #bce7fc;
+    color: #00aeff;
+}
+.pink-border:hover{
+    border: 2px solid #f9b9e4;
+    color: #ff00a6;
+}
+.purple-border:hover{
+    border: 2px solid #e3b8f8;
+    color: #a900ff;
+}
+.search-button{
+    border: 2px solid transparent;
+    padding: 0 8px;
+}
+.search-button img{
+    height: 32px;
+}
+.search-button:hover{
+    border: 2px solid dimgray;
+}
+
+.wk-logo{
+    height: 34px;
+    cursor: pointer;
+}
+
+.pfp{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin: 0 6px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+    transition: 250ms;
+    object-position: center;
+}
+.pfp:hover{
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.35);
+}
