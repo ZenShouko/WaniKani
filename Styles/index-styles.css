@@ -1,7 +1,12 @@
 h3{
     font-size: 1.5rem;
 }
-
+.first-word{
+    font-weight: 700;
+}
+.gray-text{
+    color: #437680;
+}
 
 /*Welcome back section*/
 .welcome-back-section{
@@ -296,6 +301,100 @@ h3{
     opacity: 0;
     pointer-events: none;
 }
+
+.moji-extra-info{
+    position: fixed;
+    top: 62px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moji-extra-info-container{
+    height: fit-content;
+    width: 800px;
+    background: white;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.moji-extra-info-left{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+.moji-extra-info-left h1{
+    font-size: 124px;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 1px 1px 1px black;
+    width: 1.5em;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.moji-extra-info-right{
+    height: 90%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.moji-meaning,
+.moji-reading{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+.moji-meaning-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 0.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.moji-reading-grid .JA-FONT{
+    font-size: 24px;
+}
+.moji-reading-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 0.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.moji-reading h3,
+.moji-meaning h3,
+.moji-radical-combination h3{
+    background: #f1f1f1;
+    width: fit-content;
+    padding: 0.2rem 1rem;
+    border-radius: 2px 10px 2px 10px;
+    margin-bottom: 0.5rem;
+}
+
+.moji-radical{
+    font-size: 32px;
+    height: 38px;
+    width: 38px;
+    background: #437680;
+    color: #dedede;
+    text-shadow: 1px 1px black;
+}
+
 
 @keyframes tooltip {
     0%{
