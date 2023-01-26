@@ -225,11 +225,17 @@ h3{
     cursor: pointer;
     border-radius: 8px;
     box-shadow: inset 0 -1px 1px 1px rgba(0, 0, 0, 0.35);
+    transition: 300ms;
 }
 .moji-kanji{
     background-image: linear-gradient(to top, #9D3C72, #9D3C72);
     color: #FEFEFE;
     text-shadow: 1px 1px black;
+}
+
+.moji-cell:hover{
+    transform: scale(1.1);
+    z-index: 100;
 }
 
 .moji{
@@ -272,7 +278,7 @@ h3{
 }
 
 .moji-tooltip{
-    z-index: 100;
+    z-index: 100;!important;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -282,7 +288,7 @@ h3{
     color: black;
     border-radius: 12px;
     box-shadow: 1px 1px 1px black;
-    left: -20%;
+    left: -50%;
     top: 105%;
     width: 150px;
     height: 55px;
