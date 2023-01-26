@@ -4,7 +4,7 @@ h3{
 .first-word{
     font-weight: 700;
 }
-.gray-text{
+.note-text{
     color: #437680;
 }
 
@@ -308,13 +308,15 @@ h3{
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
+    visibility: hidden;
 }
 
 .moji-extra-info-container{
+    position: relative;
     height: fit-content;
     width: 800px;
     background: white;
@@ -322,6 +324,7 @@ h3{
     grid-template-columns: 0.5fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
+    overflow: hidden;
 }
 
 .moji-extra-info-left{
@@ -341,6 +344,7 @@ h3{
     width: 1.5em;
     text-align: center;
     margin-bottom: 12px;
+    cursor: pointer;
 }
 
 .moji-extra-info-right{
@@ -387,14 +391,78 @@ h3{
 }
 
 .moji-radical{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     font-size: 32px;
-    height: 38px;
-    width: 38px;
-    background: #437680;
-    color: #dedede;
+    height: 46px;
+    width: 46px;
+    border-radius: 6px;
+    background: #82c0cc;
+    color: #FFFFFF;
     text-shadow: 1px 1px black;
+    cursor: pointer;
+    transition: 200ms;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
+.moji-radical:hover{
+    transform: scale(2.5) translateY(-0.35rem);
+}
+
+.radical-combination-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.moji-radical-combination p{
+    display: inline-block;
+}
+.moji-radical-combination img{
+    width: 24px;
+}
+
+.extra-info-toppanel{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5em;
+    border-radius: 4px;
+    padding: 0.25em 0.4em 0.25em 0.25em;
+}
+
+.extra-info-toppanel div{
+    padding: 0.75em;
+    border: 2px solid black;
+    min-width: 1.2em;
+    cursor: pointer;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 200ms;
+}
+.extra-info-toppanel div:last-child{
+    font-weight: 700;
+    font-size: 24px;
+    padding: 0;
+    height: 42px;
+    width: 42px;
+    background: #ccd5ae;
+    text-shadow: 1px 1px #b1cb48;
+}
+.extra-info-toppanel div:first-child{
+    border-right: 2px solid black;
+    background: #f2cc8f;
+    text-shadow: 1px 1px #d5b37d;
+}
+
+.extra-info-toppanel div:hover{
+    filter: hue-rotate(180deg);
+}
 
 @keyframes tooltip {
     0%{
@@ -404,6 +472,15 @@ h3{
     100%{
         opacity: 0.96;
         transform: none;
+    }
+}
+
+@keyframes moji-info {
+    0%{
+        visibility: collapse;
+    }
+    100%{
+        visibility: visible;
     }
 }
 

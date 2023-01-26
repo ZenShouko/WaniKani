@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="Styles/index-styles.css">
   <link rel="stylesheet" href="Styles/header-styles.css">
   <link rel="stylesheet" href="Styles/default-styles.css">
+  <script src="index-java.js"></script>
   <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -367,19 +368,19 @@
     <div class="moji-container">
       <h3>Kanji</h3>
       <div class="moji-grid">
-        <div class="moji-cell moji-kanji">
+        <button onclick="ShowExtraInfo" class="moji-cell moji-kanji first-kanji">
           売
-          <div class="moji-progress-container">
-            <div class="moji-checked"></div>
-            <div class="moji-checked"></div>
-            <div class="moji-checked"></div>
-            <div class="moji-unchecked"></div>
-            <div class="moji-unchecked"></div>
-          </div>
-          <div class="moji-tooltip">
-            <p>Sell</p>
-          </div>
-        </div>
+<!--          <div class="moji-progress-container">-->
+<!--            <div class="moji-checked"></div>-->
+<!--            <div class="moji-checked"></div>-->
+<!--            <div class="moji-checked"></div>-->
+<!--            <div class="moji-unchecked"></div>-->
+<!--            <div class="moji-unchecked"></div>-->
+<!--          </div>-->
+<!--          <div class="moji-tooltip">-->
+<!--            <p>Sell</p>-->
+<!--          </div>-->
+        </button>
         <div class="moji-cell moji-kanji">
           事
           <div class="moji-progress-container">
@@ -631,8 +632,13 @@
     </div>
   </div>
 </section>
-<div class="moji-extra-info">
+<!--Extra info window for kanji-->
+<div id="moji-extra-info-window" class="moji-extra-info">
   <div class="moji-extra-info-container def-div">
+    <div class="extra-info-toppanel">
+      <div>Add to ▼</div>
+      <div>X</div>
+    </div>
     <div class="moji-extra-info-left">
       <h1 class="JA-FONT moji-kanji">売</h1>
       <p>Level 9</p>
@@ -646,7 +652,7 @@
           <p>Sell</p>
           <p>/</p>
         </div>
-        <p class="gray-text"><span class="first-word">Notes:</span> <i>User custom notes</i></p>
+        <p class="note-text"><span class="first-word">Notes:</span> <i>User custom notes</i></p>
       </div>
       <div class="moji-reading">
         <h3>Reading:</h3>
@@ -658,15 +664,20 @@
           <p class="JA-FONT">う</p>
           <p>None</p>
         </div>
-        <p class="gray-text"><span class="first-word">Note:</span> <i>User custom notes</i></p>
+        <p class="note-text"><span class="first-word">Note:</span> <i>User custom notes</i></p>
       </div>
       <div class="moji-radical-combination">
         <h3>Radical Combination:</h3>
-        <p>
-          <span class="moji-radical">士</span> Samurai
-          + <span class="moji-radical">冖</span> Forehead
-          + <span class="moji-radical">儿</span> Legs
-        </p>
+        <div class="radical-combination-container">
+          <div class="moji-radical">士</div>
+          <p>Samurai</p>
+          <img src="Resources/plus.png" alt="+">
+          <div class="moji-radical">冖</div>
+          <p>Forehead</p>
+          <img src="Resources/plus.png" alt="+">
+          <div class="moji-radical">儿</div>
+          <p>Legs</p>
+        </div>
       </div>
     </div>
   </div>

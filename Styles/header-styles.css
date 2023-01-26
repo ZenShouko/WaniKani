@@ -63,6 +63,7 @@ header{
 }
 .search-button:hover{
     border: 2px solid dimgray;
+    animation: moji-info 300ms ease forwards;
 }
 
 .wk-logo{
