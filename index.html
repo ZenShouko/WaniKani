@@ -30,6 +30,9 @@
       <button class="pink-border">Kanji</button>
       <button class="purple-border">Vocabulary</button>
       <button class="gray-border">Help</button>
+      <button class="favourites-button">
+        <img src="Resources/addto-favourites.png" alt="Star">
+      </button>
       <button class="search-button">
         <img src="Resources/search-icon.png" alt="Search">
       </button>
@@ -633,11 +636,79 @@
   </div>
 </section>
 
+<!--Item levels-->
+<section class="item-level-container">
+  <h3>Srs progress</h3>
+  <div class="apprentice-block">
+    10
+    <p class="item-level">Apprentice</p>
+    <div class="item-level-info">
+      <p>Radical:</p>
+      <p>0</p>
+      <p>Kanji:</p>
+      <p>4</p>
+      <p>Vocab:</p>
+      <p>6</p>
+    </div>
+  </div>
+  <div class="guru-block">
+    25
+    <p class="item-level">Guru</p>
+    <div class="item-level-info">
+      <p>Radical:</p>
+      <p>2</p>
+      <p>Kanji:</p>
+      <p>8</p>
+      <p>Vocab:</p>
+      <p>15</p>
+    </div>
+  </div>
+  <div class="master-block">
+    50
+    <p class="item-level">Master</p>
+    <div class="item-level-info">
+      <p>Radical:</p>
+      <p>5</p>
+      <p>Kanji:</p>
+      <p>28</p>
+      <p>Vocab:</p>
+      <p>17</p>
+    </div>
+  </div>
+  <div class="enlightened-block">
+    100
+    <p class="item-level">Enlightened</p>
+    <div class="item-level-info">
+      <p>Radical:</p>
+      <p>20</p>
+      <p>Kanji:</p>
+      <p>34</p>
+      <p>Vocab:</p>
+      <p>46</p>
+    </div>
+  </div>
+  <div class="burned-block">
+    300
+      <p class="item-level">Burned</p>
+      <div class="item-level-info">
+        <p>Radical:</p>
+        <p>50</p>
+        <p>Kanji:</p>
+        <p>100</p>
+        <p>Vocab:</p>
+        <p>150</p>
+      </div>
+  </div>
+</section>
+
 <!--Extra info window for kanji-->
 <div id="moji-extra-info-window" class="moji-extra-info">
   <div id="moji-extra-info-container" class="moji-extra-info-container def-div">
     <div class="extra-info-toppanel">
-      <div onclick="addto_buttonalert()" style="cursor: help">Add to ▼</div>
+      <div onclick="addto_buttonalert()" style="cursor: help">
+        <img src="Resources/addto-favourites.png" alt="+">
+        Add to ▼
+      </div>
       <div onclick="ShowExtraInfo()">X</div>
     </div>
     <div class="moji-extra-info-left">
@@ -683,6 +754,12 @@
         </div>
       </div>
     </div>
+  </div>
+  <div id="frog" class="monocle-frog-image">
+    <img src="Resources/monocle-frog.png" alt="No frog :(">
+  </div>
+  <div id="kobayashi" class="kobayashi-newspaper-image">
+    <img src="Resources/kobayashi-newspaper.png" alt="rip Kobayashi-san">
   </div>
 </div>
 </body>

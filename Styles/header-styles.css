@@ -58,11 +58,20 @@ header{
     border: 2px solid transparent;
     padding: 0 8px;
 }
-.search-button img{
+.favourites-button{
+    border: 2px solid transparent;
+    padding: 0 8px;
+}
+
+.search-button img,
+.favourites-button img{
     height: 32px;
 }
 .search-button:hover{
     border: 2px solid dimgray;
+}
+.favourites-button:hover{
+    border: 2px solid #b5bd43;
 }
 
 .wk-logo{

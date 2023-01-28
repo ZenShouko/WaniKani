@@ -244,6 +244,10 @@ h3{
     z-index: 100;
 }
 
+.moji-cell:active{
+    transform: none;
+}
+
 .moji{
     height: 100%;
     width: 100%;
@@ -326,6 +330,7 @@ h3{
     grid-template-rows: 1fr;
     align-items: center;
     overflow: hidden;
+    z-index: 100;
 }
 
 .moji-extra-info-left{
@@ -462,8 +467,13 @@ h3{
 }
 .extra-info-toppanel div:first-child{
     border-right: 2px solid black;
-    background: #f2cc8f;
-    text-shadow: 1px 1px #d5b37d;
+    background: #cad34a;
+    text-shadow: 1px 1px #b5bd43;
+    padding: 0.25rem;
+}
+.extra-info-toppanel div:first-child img{
+    height: 32px;
+    margin-right: 8px;
 }
 
 .extra-info-toppanel div:hover{
@@ -472,6 +482,146 @@ h3{
 
 .clickable{
     cursor: help; !important;
+}
+
+.monocle-frog-image{
+    position: fixed;
+    bottom: -0.5em;
+    right: 0;
+}
+.monocle-frog-image img{
+    height: 120px;
+}
+.kobayashi-newspaper-image{
+    position: fixed;
+    bottom: -0.5em;
+    left: 0;
+}
+.kobayashi-newspaper-image img{
+    height: 300px;
+}
+
+
+/*Item-level*/
+.item-level-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    max-width: 1200px;
+    max-height: 150px;
+    margin-inline: auto;
+    justify-content: space-evenly;
+    margin-top: 2em;
+    background: #FEFEFE;
+    padding: 4em 1em 1em 1em;
+    border-radius: 12px;
+    border: 2px solid black;
+    box-shadow: 1px 1px 1px black;
+}
+.item-level-container h3{
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    font-weight: bold;
+}
+
+.apprentice-block,
+.guru-block,
+.master-block,
+.enlightened-block,
+.burned-block{
+    width: 208px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 1px 1px black;
+    cursor: pointer;
+    text-align: center;
+    transition: 300ms;
+    position: relative;
+}
+.apprentice-block:hover,
+.guru-block:hover,
+.master-block:hover,
+.enlightened-block:hover,
+.burned-block:hover{
+    height: 250px;
+    transform: translateY(-1em) skewx(1deg) scale(1.1);
+}
+
+.apprentice-block:hover .item-level,
+.guru-block:hover .item-level,
+.master-block:hover .item-level,
+.enlightened-block:hover .item-level,
+.burned-block:hover .item-level{
+    margin-bottom: 5em;
+}
+
+.apprentice-block:hover .item-level-info,
+.guru-block:hover .item-level-info,
+.master-block:hover .item-level-info,
+.enlightened-block:hover .item-level-info,
+.burned-block:hover .item-level-info{
+    animation: showLevelInfo 350ms ease-in forwards alternate;
+}
+
+.item-level-container div p{
+    font-size: 16px;
+    color: #FEFEFE;
+    text-shadow: 1px 1px black;
+    margin-top: 0.5em;
+    transition: 300ms;
+}
+
+.apprentice-block{
+    background-image: linear-gradient(to bottom, #ea9ab2, #da8ca4);
+}
+.guru-block{
+    background-image: linear-gradient(to bottom, #c5a6d7, #ae91be);
+}
+.master-block{
+    background-image: linear-gradient(to bottom, #5e60ce, #4f51c0);
+}
+.enlightened-block{
+    background-image: linear-gradient(to bottom, #34a0a4, #288a8d);
+}
+.burned-block{
+    background-image: linear-gradient(to bottom, #33415c, #2a374f);
+}
+
+.item-level-info{
+    margin-top: 1em;
+    box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.3);
+    border: 2px solid #FEFEFE;
+    border-radius: 8px;
+    padding: 0.2em;
+    height: fit-content;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1em;
+    position: absolute;
+    opacity: 0;
+    bottom: 1em;
+    left: 20px;
+    background-blend-mode: darken;
+}
+
+@keyframes showLevelInfo {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 @keyframes tooltip {
@@ -487,7 +637,7 @@ h3{
 
 @keyframes extraInfoFlyIn {
     0%{
-        transform: scale(0.9);
+        transform: translateY(2em);
         opacity: 0.8;
     }
     100%{
@@ -505,7 +655,10 @@ h3{
     }
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1200px){
+    .item-level-container{
+        max-height: max-content;
+    }
 
 }
 @media (max-width: 800px){

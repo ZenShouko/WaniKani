@@ -1,28 +1,36 @@
 function ShowExtraInfo() {
     //Get elements
-    const window = document.getElementById("moji-extra-info-window");
-    const container = document.getElementById("moji-extra-info-container");
+    let window = document.getElementById("moji-extra-info-window");
+    let container = document.getElementById("moji-extra-info-container");
+    let frog = document.getElementById("frog");
+    let kobayashi = document.getElementById("kobayashi");
 
     if (window.style.visibility === "hidden"){
         //Show window
         window.style.visibility = "visible";
 
         //Play animation
-        window.style.animation = "fadein 500ms ease";
-        container.style.animation = "extraInfoFlyIn 300ms ease-in";
+        window.style.animation = "fadein 350ms linear";
+        container.style.animation = "extraInfoFlyIn 350ms ease-in-out";
+        frog.style.animation = "extraInfoFlyIn 350ms ease-in-out";
+        kobayashi.style.animation = "extraInfoFlyIn 350ms ease-in-out";
     }
     else{
         //Play animation
         window.style.animation = "fadein 500ms ease-in reverse forwards";
 
-        //Hide window after animation
+        //Hide window
         window.style.visibility = "hidden";
+
         //Reset animation
         window.style.animation = "none";
         container.style.animation = "none";
+        frog.style.animation = "none";
+        kobayashi.style.animation = "none";
     }
 }
 
+//Messageboxes
 function addto_buttonalert(){
     alert("From this button, you can add this Kanji to a custom list(s). \n" +
         "These can be practiced later under [Extra study] => [Custom Review...]. \n" +
