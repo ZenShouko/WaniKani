@@ -371,7 +371,7 @@
     <div class="moji-container">
       <h3>Kanji</h3>
       <div class="moji-grid">
-        <div onclick="ShowExtraInfo()" class="moji-cell moji-kanji" style="cursor: help">
+        <div id="kanji1" onclick="ShowExtraInfo()" class="moji-cell moji-kanji" style="cursor: help">
           売
           <div class="moji-progress-container">
             <div class="moji-checked"></div>
@@ -705,11 +705,11 @@
 <div id="moji-extra-info-window" class="moji-extra-info">
   <div id="moji-extra-info-container" class="moji-extra-info-container def-div">
     <div class="extra-info-toppanel">
-      <div onclick="addto_buttonalert()" style="cursor: help">
+      <div id="addto-button" onclick="addto_buttonalert()" style="cursor: help">
         <img src="Resources/addto-favourites.png" alt="+">
         Add to ▼
       </div>
-      <div onclick="ShowExtraInfo()">X</div>
+      <div id="close-button" onclick="ShowExtraInfo()">X</div>
     </div>
     <div class="moji-extra-info-left">
       <a href="https://www.wanikani.com/kanji/%E5%A3%B2" target="_blank">
@@ -743,20 +743,17 @@
       <div class="moji-radical-combination">
         <h3>Radical Combination:</h3>
         <div class="radical-combination-container">
-          <div class="moji-radical">士</div>
+          <div id="moji-radical1" class="moji-radical">士</div>
           <p>Samurai</p>
           <img src="Resources/plus.png" alt="+">
-          <div class="moji-radical">冖</div>
+          <div id="moji-radical2" class="moji-radical">冖</div>
           <p>Forehead</p>
           <img src="Resources/plus.png" alt="+">
-          <div class="moji-radical">儿</div>
+          <div id="moji-radical3" class="moji-radical">儿</div>
           <p>Legs</p>
         </div>
       </div>
     </div>
-  </div>
-  <div id="frog" class="monocle-frog-image">
-    <img src="Resources/monocle-frog.png" alt="No frog :(">
   </div>
   <div id="kobayashi" class="kobayashi-newspaper-image">
     <img src="Resources/kobayashi-newspaper.png" alt="rip Kobayashi-san">
