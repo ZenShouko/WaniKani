@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en　ja-jp">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
-<!--De totale breedte= 1200px op volledig scherm-->
+<!--De totale breedte= 1000px op volledig scherm-->
 <body>
 <header>
   <div class="header-container">
@@ -78,7 +78,7 @@
         <img src="Resources/burned.png" alt="bruh">
         400 Burned Items
       </button>
-      <button>
+      <button onclick="customreview_alert()" style="cursor: help">
         <img src="Resources/custom-thinking.png" alt="bruh">
         Custom Review ...
       </button>
@@ -368,27 +368,27 @@
     <div class="moji-container">
       <h3>Kanji</h3>
       <div class="moji-grid">
-        <button onclick="ShowExtraInfo" class="moji-cell moji-kanji first-kanji">
+        <div onclick="ShowExtraInfo()" class="moji-cell moji-kanji" style="cursor: help">
           売
-<!--          <div class="moji-progress-container">-->
-<!--            <div class="moji-checked"></div>-->
-<!--            <div class="moji-checked"></div>-->
-<!--            <div class="moji-checked"></div>-->
-<!--            <div class="moji-unchecked"></div>-->
-<!--            <div class="moji-unchecked"></div>-->
-<!--          </div>-->
-<!--          <div class="moji-tooltip">-->
-<!--            <p>Sell</p>-->
-<!--          </div>-->
-        </button>
+          <div class="moji-progress-container">
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
+          </div>
+          <div class="moji-tooltip">
+            <p>Sell</p>
+          </div>
+        </div>
         <div class="moji-cell moji-kanji">
           事
           <div class="moji-progress-container">
             <div class="moji-checked"></div>
             <div class="moji-checked"></div>
             <div class="moji-checked"></div>
-            <div class="moji-unchecked"></div>
-            <div class="moji-unchecked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
           </div>
           <div class="moji-tooltip">
             <p>Action</p>
@@ -400,8 +400,8 @@
             <div class="moji-checked"></div>
             <div class="moji-checked"></div>
             <div class="moji-checked"></div>
-            <div class="moji-unchecked"></div>
-            <div class="moji-unchecked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
           </div>
           <div class="moji-tooltip">
             <p>Tool</p>
@@ -413,8 +413,8 @@
             <div class="moji-checked"></div>
             <div class="moji-checked"></div>
             <div class="moji-checked"></div>
-            <div class="moji-unchecked"></div>
-            <div class="moji-unchecked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
           </div>
           <div class="moji-tooltip">
             <p>Peace</p>
@@ -426,8 +426,8 @@
             <div class="moji-checked"></div>
             <div class="moji-checked"></div>
             <div class="moji-checked"></div>
-            <div class="moji-unchecked"></div>
-            <div class="moji-unchecked"></div>
+            <div class="moji-checked"></div>
+            <div class="moji-checked"></div>
           </div>
           <div class="moji-tooltip">
             <p>Clothes</p>
@@ -439,7 +439,7 @@
             <div class="moji-checked"></div>
             <div class="moji-checked"></div>
             <div class="moji-checked"></div>
-            <div class="moji-unchecked"></div>
+            <div class="moji-checked"></div>
             <div class="moji-unchecked"></div>
           </div>
           <div class="moji-tooltip">
@@ -452,7 +452,7 @@
             <div class="moji-checked"></div>
             <div class="moji-checked"></div>
             <div class="moji-checked"></div>
-            <div class="moji-unchecked"></div>
+            <div class="moji-checked"></div>
             <div class="moji-unchecked"></div>
           </div>
           <div class="moji-tooltip">
@@ -465,7 +465,7 @@
             <div class="moji-checked"></div>
             <div class="moji-checked"></div>
             <div class="moji-checked"></div>
-            <div class="moji-unchecked"></div>
+            <div class="moji-checked"></div>
             <div class="moji-unchecked"></div>
           </div>
           <div class="moji-tooltip">
@@ -478,7 +478,7 @@
             <div class="moji-checked"></div>
             <div class="moji-checked"></div>
             <div class="moji-checked"></div>
-            <div class="moji-unchecked"></div>
+            <div class="moji-checked"></div>
             <div class="moji-unchecked"></div>
           </div>
           <div class="moji-tooltip">
@@ -491,7 +491,7 @@
             <div class="moji-checked"></div>
             <div class="moji-checked"></div>
             <div class="moji-checked"></div>
-            <div class="moji-unchecked"></div>
+            <div class="moji-checked"></div>
             <div class="moji-unchecked"></div>
           </div>
           <div class="moji-tooltip">
@@ -542,7 +542,7 @@
           <div class="moji-progress-container">
             <div class="moji-checked"></div>
             <div class="moji-checked"></div>
-            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
             <div class="moji-unchecked"></div>
             <div class="moji-unchecked"></div>
           </div>
@@ -554,8 +554,8 @@
           ツ
           <div class="moji-progress-container">
             <div class="moji-checked"></div>
-            <div class="moji-checked"></div>
-            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
             <div class="moji-unchecked"></div>
             <div class="moji-unchecked"></div>
           </div>
@@ -568,33 +568,7 @@
           <div class="moji-progress-container">
             <div class="moji-checked"></div>
             <div class="moji-checked"></div>
-            <div class="moji-checked"></div>
             <div class="moji-unchecked"></div>
-            <div class="moji-unchecked"></div>
-          </div>
-          <div class="moji-tooltip">
-            <p>Shitsu</p>
-          </div>
-        </div>
-        <div class="moji-cell moji-kanji">
-          ツ
-          <div class="moji-progress-container">
-            <div class="moji-checked"></div>
-            <div class="moji-checked"></div>
-            <div class="moji-checked"></div>
-            <div class="moji-unchecked"></div>
-            <div class="moji-unchecked"></div>
-          </div>
-          <div class="moji-tooltip">
-            <p>Shitsu</p>
-          </div>
-        </div>
-        <div class="moji-cell moji-kanji">
-          シ
-          <div class="moji-progress-container">
-            <div class="moji-checked"></div>
-            <div class="moji-checked"></div>
-            <div class="moji-checked"></div>
             <div class="moji-unchecked"></div>
             <div class="moji-unchecked"></div>
           </div>
@@ -605,9 +579,9 @@
         <div class="moji-cell moji-kanji">
           ツ
           <div class="moji-progress-container">
-            <div class="moji-checked"></div>
-            <div class="moji-checked"></div>
-            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
             <div class="moji-unchecked"></div>
             <div class="moji-unchecked"></div>
           </div>
@@ -618,9 +592,35 @@
         <div class="moji-cell moji-kanji">
           シ
           <div class="moji-progress-container">
-            <div class="moji-checked"></div>
-            <div class="moji-checked"></div>
-            <div class="moji-checked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+          </div>
+          <div class="moji-tooltip">
+            <p>Shitsu</p>
+          </div>
+        </div>
+        <div class="moji-cell moji-kanji">
+          ツ
+          <div class="moji-progress-container">
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+          </div>
+          <div class="moji-tooltip">
+            <p>Shitsu</p>
+          </div>
+        </div>
+        <div class="moji-cell moji-kanji">
+          シ
+          <div class="moji-progress-container">
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
+            <div class="moji-unchecked"></div>
             <div class="moji-unchecked"></div>
             <div class="moji-unchecked"></div>
           </div>
@@ -632,15 +632,18 @@
     </div>
   </div>
 </section>
+
 <!--Extra info window for kanji-->
 <div id="moji-extra-info-window" class="moji-extra-info">
-  <div class="moji-extra-info-container def-div">
+  <div id="moji-extra-info-container" class="moji-extra-info-container def-div">
     <div class="extra-info-toppanel">
-      <div>Add to ▼</div>
-      <div>X</div>
+      <div onclick="addto_buttonalert()" style="cursor: help">Add to ▼</div>
+      <div onclick="ShowExtraInfo()">X</div>
     </div>
     <div class="moji-extra-info-left">
-      <h1 class="JA-FONT moji-kanji">売</h1>
+      <a href="https://www.wanikani.com/kanji/%E5%A3%B2" target="_blank">
+        <h1 class="JA-FONT moji-kanji" style="cursor: help">売</h1>
+      </a>
       <p>Level 9</p>
     </div>
     <div class="moji-extra-info-right">

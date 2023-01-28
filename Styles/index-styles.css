@@ -6,6 +6,7 @@ h3{
 }
 .note-text{
     color: #437680;
+    cursor: pointer;
 }
 
 /*Welcome back section*/
@@ -336,6 +337,11 @@ h3{
     padding: 1em;
 }
 
+.moji-extra-info-left a{
+    text-decoration: none;
+    cursor: help;
+}
+
 .moji-extra-info-left h1{
     font-size: 124px;
     border-radius: 20px;
@@ -464,6 +470,10 @@ h3{
     filter: hue-rotate(180deg);
 }
 
+.clickable{
+    cursor: help; !important;
+}
+
 @keyframes tooltip {
     0%{
         opacity: 0;
@@ -475,12 +485,23 @@ h3{
     }
 }
 
-@keyframes moji-info {
+@keyframes extraInfoFlyIn {
     0%{
-        visibility: collapse;
+        transform: scale(0.9);
+        opacity: 0.8;
     }
     100%{
-        visibility: visible;
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
 
