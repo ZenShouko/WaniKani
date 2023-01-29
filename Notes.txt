@@ -1,1 +1,5 @@
 Header Background color: #f6f6f6;
+
+To do:
+ - Change Moji extra info window content position from top to bottom.
+    So the Moji character is placed on top instead of on the left.

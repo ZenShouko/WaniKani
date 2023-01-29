@@ -639,16 +639,16 @@
 <!--Item levels-->
 <section class="item-level-container">
   <h3>Srs progress</h3>
-  <div class="apprentice-block">
-    10
+  <div id="apprenticeBlock" onclick="ShowSrsInfo()" class="apprentice-block">
+    20
     <p class="item-level">Apprentice</p>
     <div class="item-level-info">
       <p>Radical:</p>
-      <p>0</p>
+      <p>5</p>
       <p>Kanji:</p>
-      <p>4</p>
+      <p>7</p>
       <p>Vocab:</p>
-      <p>6</p>
+      <p>8</p>
     </div>
   </div>
   <div class="guru-block">
@@ -701,8 +701,8 @@
   </div>
 </section>
 
-<!--Extra info window for kanji-->
-<div id="moji-extra-info-window" class="moji-extra-info">
+<!--Extra info window for kanji & SRS-->
+<div id="dark-screen" class="dark-screen">
   <div id="moji-extra-info-container" class="moji-extra-info-container def-div">
     <div class="extra-info-toppanel">
       <div id="addto-button" onclick="addto_buttonalert()" style="cursor: help">
@@ -755,9 +755,137 @@
       </div>
     </div>
   </div>
+  <div id="srs-extra-info-window" class="srs-extra-info-window def-div">
+    <div class="extra-info-toppanel">
+      <div id="close-button1" onclick="ShowSrsInfo()">X</div>
+    </div>
+    <div>
+      <img class="srs-egg" src="Resources/apprentice-egg.png" alt="egg">
+      <h3>Apprentice</h3>
+      <div class="srs-grid">
+        <p>Radicals:</p>
+        <p>5</p>
+        <img src="Resources/arrow-down.png" alt="↘">
+        <p>Kanji</p>
+        <p>7</p>
+        <img src="Resources/arrow-right.png" alt="→">
+        <p>Vocabulary:</p>
+        <p>8</p>
+        <img src="Resources/arrow-up.png" alt="↗">
+      </div>
+    </div>
+    <div class="srs-content">
+      <h3>Recently added</h3>
+      <h3>Radicals:</h3>
+      <div class="srs-items-grid">
+        <div class="moji-cell">
+          介
+          <div class="moji-tooltip">
+            <p>Jammed In</p>
+          </div>
+        </div>
+        <div class="moji-cell">
+          史
+          <div class="moji-tooltip">
+            <p>History</p>
+          </div>
+        </div>
+        <div class="moji-cell">
+          癶
+          <div class="moji-tooltip">
+            <p>Tent</p>
+          </div>
+        </div>
+        <div class="moji-cell">
+          咅
+          <div class="moji-tooltip">
+            <p>Clown</p>
+          </div>
+        </div>
+        <div class="moji-cell">
+          阝
+          <div class="moji-tooltip">
+            <p>Building</p>
+          </div>
+        </div>
+      </div>
+      <h3>Recent Kanji:</h3>
+      <div class="srs-items-grid">
+        <div class="moji-cell moji-kanji">
+          乗
+          <div class="moji-tooltip">
+            <p>Ride</p>
+          </div>
+        </div>
+        <div class="moji-cell moji-kanji">
+          客
+          <div class="moji-tooltip">
+            <p>Guest</p>
+          </div>
+        </div>
+        <div class="moji-cell moji-kanji">
+          屋
+          <div class="moji-tooltip">
+            <p>Roof</p>
+          </div>
+        </div>
+        <div class="moji-cell moji-kanji">
+          持
+          <div class="moji-tooltip">
+            <p>Hold</p>
+          </div>
+        </div>
+        <div class="moji-cell moji-kanji">
+          相
+          <div class="moji-tooltip">
+            <p>Mutual</p>
+          </div>
+        </div>
+      </div>
+      <h3>Recent Vocabulary:</h3>
+      <div class="srs-items-grid">
+        <div class="moji-cell moji-vocab">
+          通り
+          <div class="moji-tooltip">
+            <p>Avenue</p>
+          </div>
+        </div>
+        <div class="moji-cell moji-vocab">
+          白黒
+          <div class="moji-tooltip">
+            <p>Black and white</p>
+          </div>
+        </div>
+        <div class="moji-cell moji-vocab">
+          交代
+          <div class="moji-tooltip">
+            <p>Change</p>
+          </div>
+        </div>
+        <div class="moji-cell moji-vocab">
+          高さ
+          <div class="moji-tooltip">
+            <p>Height</p>
+          </div>
+        </div>
+        <div class="moji-cell moji-vocab">
+          付近
+          <div class="moji-tooltip">
+            <p>Neighbourhood</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Image-->
   <div id="kobayashi" class="kobayashi-newspaper-image">
     <img src="Resources/kobayashi-newspaper.png" alt="rip Kobayashi-san">
   </div>
+</div>
+
+<!--Extra info window for SRS-->
+<div class="srs-extra-info">
+
 </div>
 </body>
 </html>

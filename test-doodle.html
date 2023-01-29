@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test</title>
+  <script>
+    function playAnimation(){
+      let kid = document.getElementsByClassName("kid");
+      let kidAnimation = window.getComputedStyle(kid[0]).getPropertyValue("animation");
+
+      kid[0].style.animation = "boxAnimation 1s linear";
+    }
+
+    // function showBigBox(){
+    //     const bigBox = document.getElementsByClassName("bigBox");
+    //     let boxVisibility = getComputedStyle(bigBox[0]).getPropertyValue("visibility");
+    //
+    //     if (boxVisibility === "hidden"){
+    //         bigBox[0].style.visibility = "visible";
+    //     } else {
+    //         bigBox[0].style.visibility = "hidden";
+    //     }
+    // }
+  </script>
+  <style>
+    .parent{
+        height: 200px; width: 250px;
+        border: 2px solid black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .kid{
+        height: 50px; width: 50px;
+        background: lightblue;
+        border: 2px solid pink;
+        text-align: center;
+        animation: none;
+        pointer-events: visible;
+    }
+
+    @keyframes boxAnimation {
+        0%{
+            transform: translateY(0);
+        }
+        10%{
+            transform: translateY(-2em);
+        }
+        100%{
+            transform: translateY(10em);
+        }
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div onclick="playAnimation()" class="kid">:)</div>
+  </div>
+</body>
+</html>
