@@ -613,13 +613,25 @@ h3{
     transition: 300ms;
     position: relative;
 }
-.apprentice-block:hover,
-.guru-block:hover,
-.master-block:hover,
-.enlightened-block:hover,
+.apprentice-block:hover{
+    height: 250px;
+    transform: translateY(-1em) scale(1.1) skewX(-2deg);
+}
+.guru-block:hover{
+    height: 250px;
+    transform: translateY(-1em) scale(1.1) skewX(-1deg);
+}
+.master-block:hover{
+    height: 250px;
+    transform: translateY(-1em) scale(1.1);
+}
+.enlightened-block:hover{
+    height: 250px;
+    transform: translateY(-1em) scale(1.1) skewX(1deg);
+}
 .burned-block:hover{
     height: 250px;
-    transform: translateY(-1em) skewx(1deg) scale(1.1);
+    transform: translateY(-1em) scale(1.1) skewX(2deg);
 }
 
 .apprentice-block:hover .item-level,
