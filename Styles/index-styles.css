@@ -339,6 +339,7 @@ h3{
     align-items: center;
     overflow: hidden;
     z-index: 100;
+    cursor: default;
 }
 
 .moji-extra-info-left{
@@ -499,6 +500,7 @@ h3{
     position: relative;
     width: 800px;
     height: 500px;
+    cursor: default;
 }
 .srs-egg{
     background-color: #484848;
