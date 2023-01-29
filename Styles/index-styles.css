@@ -315,6 +315,7 @@ h3{
 }
 
 .dark-screen{
+    z-index: 100;
     position: fixed;
     top: 62px;
     left: 0;
@@ -544,7 +545,7 @@ h3{
     margin-right: 0.5em;
 }
 .srs-grid img{
-    height: 26px;
+    height: 22px;
 }
 
 .srs-items-grid{
@@ -675,6 +676,37 @@ h3{
     bottom: 1em;
     left: 20px;
     background-blend-mode: darken;
+}
+
+/*Footer*/
+footer{
+    z-index: 0;
+    height: 240px;
+    position: absolute;
+    bottom: -8px;
+    left: -8px;
+    right: -8px;
+    background-image: url("../Resources/footer-image.gif");
+    background-position: center;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 1em;
+}
+
+footer div{
+    border: 2px solid black;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px black;
+    background: #FEFEFE;
+    padding: 1em 2em;
+    text-align: center;
+}
+
+footer a{
+    display: block;
+    margin-top: 0.4rem;
 }
 
 @keyframes showLevelInfo {

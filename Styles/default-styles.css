@@ -15,8 +15,9 @@ p, h1, h2, h3, h4, h5{
 
 body{
     padding-top: 75px;
-    padding-bottom: 200px;
+    padding-bottom: 350px;
     background: #f4efff;
+    position: relative;
 }
 
 .def-div{
