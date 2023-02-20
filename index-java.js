@@ -1,3 +1,7 @@
+//auto load
+let forecastVisibility = false;
+
+//Buttons
 function ShowExtraInfo() {
     //Get elements
     //Windows
@@ -106,6 +110,20 @@ function ShowSrsInfo(){
     }
 }
 
+function ShowForecast(){
+    let forecastWindow = document.getElementsByClassName('review-forecast-container')[0];
+
+    if (forecastVisibility === false){
+        forecastVisibility = true;
+        forecastWindow.style.visibility = 'visible';
+        forecastWindow.style.animation = 'forecastAni 350ms ease-in-out';
+    }
+    else{
+        forecastVisibility = false;
+        forecastWindow.style.visibility = 'hidden';
+        forecastWindow.style.animation = 'none';
+    }
+}
 //Messageboxes
 function addto_buttonalert(){
     alert("From this button, you can add this Kanji to a custom list(s). \n" +

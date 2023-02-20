@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="Styles/index-styles.css">
   <link rel="stylesheet" href="Styles/header-styles.css">
   <link rel="stylesheet" href="Styles/default-styles.css">
-  <script src="index-java.js"></script>
+  <script defer src="index-java.js"></script>
   <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,13 +30,57 @@
       <button class="pink-border">Kanji</button>
       <button class="purple-border">Vocabulary</button>
       <button class="gray-border">Help</button>
-      <button class="favourites-button">
-        <img src="Resources/addto-favourites.png" alt="Star">
+      <button onclick="ShowForecast()" class="forecast-button">
+        <img src="Resources/calender-plane.png" alt="Forecast">
       </button>
       <button class="search-button">
         <img src="Resources/search-icon.png" alt="Search">
       </button>
-      <img class="pfp" src="Resources/pfp.jpeg" alt="Profile Picture">
+      <img class="pfp" src="Resources/pfp.jpg" alt="Profile Picture">
+    </div>
+  </div>
+  <div class="review-forecast-container">
+    <div class="forecast-card">
+      <div class="forecast-card-header JA-FONT">月曜日</div>
+      <div class="forecast-card-grid">
+        <div class="forecast-card-grid-item"><p>Mon.</p><p>20 items</p></div>
+      </div>
+    </div>
+    <div class="forecast-card">
+      <div class="forecast-card-header JA-FONT">火曜日</div>
+      <div class="forecast-card-grid">
+        <div class="forecast-card-grid-item"><p>Tue.</p><p>36 items</p></div>
+      </div>
+    </div>
+    <div class="forecast-card">
+      <div class="forecast-card-header JA-FONT">水曜日</div>
+      <div class="forecast-card-grid">
+        <div class="forecast-card-grid-item"><p>Wed.</p><p>8 items</p></div>
+      </div>
+    </div>
+    <div class="forecast-card">
+      <div class="forecast-card-header JA-FONT">木曜日</div>
+      <div class="forecast-card-grid">
+        <div class="forecast-card-grid-item"><p>Thu.</p><p>4 items</p></div>
+      </div>
+    </div>
+    <div class="forecast-card">
+      <div class="forecast-card-header JA-FONT">金曜日</div>
+      <div class="forecast-card-grid">
+        <div class="forecast-card-grid-item"><p>Fri.</p><p>42 items</p></div>
+      </div>
+    </div>
+    <div class="forecast-card">
+      <div class="forecast-card-header JA-FONT">土曜日</div>
+      <div class="forecast-card-grid">
+        <div class="forecast-card-grid-item"><p>Sat.</p><p>2 items</p></div>
+      </div>
+    </div>
+    <div class="forecast-card">
+      <div class="forecast-card-header JA-FONT">日曜日</div>
+      <div class="forecast-card-grid">
+        <div class="forecast-card-grid-item"><p>Sun.</p><p>80 items</p></div>
+      </div>
     </div>
   </div>
 </header>
