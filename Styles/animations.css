@@ -1,0 +1,79 @@
+@keyframes showLevelInfo {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes tooltip {
+    0%{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100%{
+        opacity: 0.96;
+        transform: none;
+    }
+}
+
+@keyframes extraInfoFlyIn {
+    0%{
+        transform: translateY(2em);
+        opacity: 0.8;
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*Forecast-card Items*/
+@keyframes toAppear {
+    0%{
+        display: none;
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    1%{
+        display: grid;
+    }
+    100%{
+        display: grid;
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes toDisappear {
+    0%{
+        display: grid;
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(100%);
+        display: none;
+    }
+}
+
+@keyframes forecastAni {
+    0%{
+        transform: translateY(-150%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

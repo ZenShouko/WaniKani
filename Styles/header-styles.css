@@ -161,13 +161,6 @@ header{
     text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-@keyframes forecastAni {
-    0%{
-        transform: translateY(-150%);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0);
-        opacity: 1;
-    }
+.display-none{
+    display: none;
 }

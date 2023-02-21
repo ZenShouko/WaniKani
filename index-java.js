@@ -111,6 +111,7 @@ function ShowSrsInfo(){
 }
 
 function ShowForecast(){
+    ResetForecastCards();
     let forecastWindow = document.getElementsByClassName('review-forecast-container')[0];
 
     if (forecastVisibility === false){
@@ -123,6 +124,102 @@ function ShowForecast(){
         forecastWindow.style.visibility = 'hidden';
         forecastWindow.style.animation = 'none';
     }
+}
+
+function ResetForecastCards(){
+    let item = document.getElementsByClassName('forecast-card-grid');
+    for (let i = 0; i < item.length; i += 2) {
+        item[i].style.display = 'grid';
+    }
+
+    for (let i = 1; i < item.length; i += 2) {
+        item[i].style.display = 'none';
+    }
+}
+function ExpandForecastCard(cardName){
+    let Grid = document.getElementsByClassName('forecast-card-grid');
+    let GridVisib1 = getComputedStyle(Grid[1]).getPropertyValue('display');
+    let GridVisib2 = getComputedStyle(Grid[3]).getPropertyValue('display');
+    let GridVisib3 = getComputedStyle(Grid[5]).getPropertyValue('display');
+    let GridVisib4 = getComputedStyle(Grid[7]).getPropertyValue('display');
+    let GridVisib5 = getComputedStyle(Grid[9]).getPropertyValue('display');
+    let GridVisib6 = getComputedStyle(Grid[11]).getPropertyValue('display');
+    let GridVisib7 = getComputedStyle(Grid[13]).getPropertyValue('display');
+    ResetForecastCards();
+
+    switch (cardName){
+        case "Mon":{
+            if (GridVisib1 === 'none'){
+                Grid[0].style.display = 'none';
+                Grid[1].style.display = 'grid';
+            }
+            else{
+                ResetForecastCards();
+            }
+            break;
+        }
+        case "Tue":{
+            if (GridVisib2 === 'none'){
+                Grid[2].style.display = 'none';
+                Grid[3].style.display = 'grid';
+            }
+            else{
+                ResetForecastCards();
+            }
+            break;
+        }
+        case "Wed":{
+            if (GridVisib3 === 'none'){
+                Grid[4].style.display = 'none';
+                Grid[5].style.display = 'grid';
+            }
+            else{
+                ResetForecastCards();
+            }
+            break;
+        }
+        case "Thu":{
+            if (GridVisib4 === 'none'){
+                Grid[6].style.display = 'none';
+                Grid[7].style.display = 'grid';
+            }
+            else{
+                ResetForecastCards();
+            }
+            break;
+        }
+        case "Fri":{
+            if (GridVisib5 === 'none'){
+                Grid[8].style.display = 'none';
+                Grid[9].style.display = 'grid';
+            }
+            else{
+                ResetForecastCards();
+            }
+            break;
+        }
+        case "Sat":{
+            if (GridVisib6 === 'none'){
+                Grid[10].style.display = 'none';
+                Grid[11].style.display = 'grid';
+            }
+            else{
+                ResetForecastCards();
+            }
+            break;
+        }
+        case "Sun":{
+            if (GridVisib7 === 'none'){
+                Grid[12].style.display = 'none';
+                Grid[13].style.display = 'grid';
+            }
+            else{
+                ResetForecastCards();
+            }
+            break;
+        }
+    }
+
 }
 //Messageboxes
 function addto_buttonalert(){

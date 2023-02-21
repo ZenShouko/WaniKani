@@ -724,48 +724,6 @@ footer a{
     color: #4f51c0;
 }
 
-@keyframes showLevelInfo {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-@keyframes tooltip {
-    0%{
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    100%{
-        opacity: 0.96;
-        transform: none;
-    }
-}
-
-@keyframes extraInfoFlyIn {
-    0%{
-        transform: translateY(2em);
-        opacity: 0.8;
-    }
-    100%{
-        transform: none;
-        opacity: 1;
-    }
-}
-
-@keyframes fadein {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-
-
 @media (max-width: 1200px){
     .item-level-container{
         max-height: max-content;

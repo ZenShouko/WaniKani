@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="Styles/index-styles.css">
   <link rel="stylesheet" href="Styles/header-styles.css">
   <link rel="stylesheet" href="Styles/default-styles.css">
+  <link rel="stylesheet" href="Styles/animations.css">
   <script defer src="index-java.js"></script>
   <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,46 +41,78 @@
     </div>
   </div>
   <div class="review-forecast-container">
-    <div class="forecast-card">
+    <div onclick="ExpandForecastCard('Mon')" class="forecast-card">
       <div class="forecast-card-header JA-FONT">月曜日</div>
       <div class="forecast-card-grid">
-        <div class="forecast-card-grid-item"><p>Mon.</p><p>20 items</p></div>
+        <div class="forecast-card-grid-item"><p>Mon.</p><p class="forecast-amount">20 items</p></div>
+      </div>
+      <div class="forecast-card-grid display-none">
+        <div class="forecast-card-grid-item"><p>10 AM</p><p>12 items</p></div>
+        <div class="forecast-card-grid-item"><p>6 PM</p><p>8 items</p></div>
       </div>
     </div>
-    <div class="forecast-card">
+    <div onclick="ExpandForecastCard('Tue')" class="forecast-card">
       <div class="forecast-card-header JA-FONT">火曜日</div>
       <div class="forecast-card-grid">
-        <div class="forecast-card-grid-item"><p>Tue.</p><p>36 items</p></div>
+        <div class="forecast-card-grid-item"><p>Tue.</p><p class="forecast-amount">36 items</p></div>
+      </div>
+      <div class="forecast-card-grid display-none">
+        <div class="forecast-card-grid-item"><p>6 AM</p><p>5 items</p></div>
+        <div class="forecast-card-grid-item"><p>9 PM</p><p>11 items</p></div>
       </div>
     </div>
-    <div class="forecast-card">
+    <div onclick="ExpandForecastCard('Wed')" class="forecast-card">
       <div class="forecast-card-header JA-FONT">水曜日</div>
       <div class="forecast-card-grid">
-        <div class="forecast-card-grid-item"><p>Wed.</p><p>8 items</p></div>
+        <div class="forecast-card-grid-item"><p>Wed.</p><p class="forecast-amount">45 items</p></div>
+      </div>
+      <div class="forecast-card-grid display-none">
+        <div class="forecast-card-grid-item"><p>1 PM</p><p>7 items</p></div>
+        <div class="forecast-card-grid-item"><p>2 PM</p><p>2 items</p></div>
       </div>
     </div>
-    <div class="forecast-card">
+    <div onclick="ExpandForecastCard('Thu')" class="forecast-card">
       <div class="forecast-card-header JA-FONT">木曜日</div>
       <div class="forecast-card-grid">
-        <div class="forecast-card-grid-item"><p>Thu.</p><p>4 items</p></div>
+        <div class="forecast-card-grid-item"><p>Thu.</p><p class="forecast-amount">50 items</p></div>
+      </div>
+      <div class="forecast-card-grid display-none">
+        <div class="forecast-card-grid-item"><p>11 PM</p><p>5 items</p></div>
       </div>
     </div>
-    <div class="forecast-card">
+    <div onclick="ExpandForecastCard('Fri')" class="forecast-card">
       <div class="forecast-card-header JA-FONT">金曜日</div>
       <div class="forecast-card-grid">
-        <div class="forecast-card-grid-item"><p>Fri.</p><p>42 items</p></div>
+        <div class="forecast-card-grid-item"><p>Fri.</p><p class="forecast-amount">80 items</p></div>
+      </div>
+      <div class="forecast-card-grid display-none">
+        <div class="forecast-card-grid-item"><p>11 AM</p><p>16 items</p></div>
+        <div class="forecast-card-grid-item"><p>1 PM</p><p>12 items</p></div>
+        <div class="forecast-card-grid-item"><p>3 PM</p><p>2 items</p></div>
       </div>
     </div>
-    <div class="forecast-card">
+    <div onclick="ExpandForecastCard('Sat')" class="forecast-card">
       <div class="forecast-card-header JA-FONT">土曜日</div>
       <div class="forecast-card-grid">
-        <div class="forecast-card-grid-item"><p>Sat.</p><p>2 items</p></div>
+        <div class="forecast-card-grid-item"><p class="forecast-amount">Sat.</p><p>94 items</p></div>
+      </div>
+      <div class="forecast-card-grid display-none">
+        <div class="forecast-card-grid-item"><p>5 AM</p><p>4 items</p></div>
+        <div class="forecast-card-grid-item"><p>6 AM</p><p>10 items</p></div>
       </div>
     </div>
-    <div class="forecast-card">
+    <div onclick="ExpandForecastCard('Sun')" class="forecast-card">
       <div class="forecast-card-header JA-FONT">日曜日</div>
       <div class="forecast-card-grid">
-        <div class="forecast-card-grid-item"><p>Sun.</p><p>80 items</p></div>
+        <div class="forecast-card-grid-item"><p>Sun.</p><p class="forecast-amount">100 items</p></div>
+      </div>
+      <div class="forecast-card-grid display-none">
+        <div class="forecast-card-grid-item"><p>12 PM</p><p>1 item</p></div>
+        <div class="forecast-card-grid-item"><p>1 AM</p><p>1 item</p></div>
+        <div class="forecast-card-grid-item"><p>2 AM</p><p>1 item</p></div>
+        <div class="forecast-card-grid-item"><p>3 AM</p><p>1 item</p></div>
+        <div class="forecast-card-grid-item"><p>4 AM</p><p>1 item</p></div>
+        <div class="forecast-card-grid-item"><p>5 AM</p><p>1 item</p></div>
       </div>
     </div>
   </div>
